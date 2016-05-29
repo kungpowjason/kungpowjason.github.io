@@ -1,0 +1,16 @@
+.class-title {
+	font-family: Arial;
+	font-size: 0.7em;
+}
+
+.class-course {
+	font-weight: bold;
+}
+
+.class-subject {
+	font-weight: bold;
+	float: left;
+}
+.class-year {
+	border-bottom: 2px outset rgb(213, 213, 213);
+}
