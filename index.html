@@ -1,10 +1,48 @@
+<!doctype html>
 <html>
   <head>
-    <title>Redirect</title>
-    <META http-equiv="refresh" content="3;URL=http://users.wpi.edu/~ywu4/projects.html">
+    <meta charset="utf-8">
+    <style>
+    body {
+		background-color: #2b72ad;    
+}
+	</style>
+    <script src="js/two.min.js"></script>
   </head>
-  <body bgcolor="#ffffff">
-    <center>The contents you are looking for have moved. You will be redirected to <a href="http://users.wpi.edu/~ywu4/projects.html"> http://users.wpi.edu/~ywu4/projects.html</a>
-    </center>
-    </body>
+  <body>
+    <script>
+    var two = new Two({
+        fullscreen: true,
+        autostart: true
+      }).appendTo(document.body);
+    var circle = two.makeCircle(-70, 0, 50);
+    var circle_eye = two.makeCircle(-80, -25, 5);
+	var triangle = two.makePolygon(0, 0, 60,3);
+	var triangle_fin = two.makePolygon(-55, 25, 20,3);
+	triangle.rotation = Math.PI/6;
+	triangle_fin.rotation = Math.PI/12
+	circle.fill = '#FF8000';
+	circle_eye.fill = '#000000';
+	triangle.fill = '#FF8000';
+	triangle_fin.fill = '#c1560f'
+
+	var group = two.makeGroup(circle, triangle, circle_eye, triangle_fin);
+	group.translation.set(two.width / 2, two.height / 2);
+	group.scale = 0;
+	group.noStroke();
+
+	// Bind a function to scale and rotate the group
+	// to the animation loop.
+	two.bind('update', function(frameCount) {
+	  // This code is called everytime two.update() is called.
+	  // Effectively 60 times per second.
+	  if (group.scale > 0.9999) {
+	    group.scale = group.rotation = 0;
+	  }
+	  var t = (1 - group.scale) * 0.025;
+	  group.scale += t;
+	  group.rotation += t * 4 * Math.PI;
+	}).play();  // Finally, start the animation loop
+    </script>
+  </body>
 </html>
