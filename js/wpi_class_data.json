@@ -38,7 +38,24 @@ var arr =[
 {"Title": "AMERICAN PUBLIC POLICY", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1303", "Semester": "Spring", "Year": "2016", "Subject": "GOV"},
 {"Title": "CONTEMP WRLD ISS IN HIST PERSP", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2341", "Semester": "Spring", "Year": "2016", "Subject": "HI"},
 {"Title": "STOCK MARKET SIMULATION", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "DZT", "Semester": "Spring", "Year": "2016", "Subject": "IQP"},
-{"Title": "THERMODYNAMIC APPL. & DESIGN", "null": ["\u00a0", "", ""], "Course": "4429", "Semester": "Spring", "Year": "2016", "Subject": "ME"}];
+{"Title": "THERMODYNAMIC APPL. & DESIGN", "null": ["\u00a0", "", ""], "Course": "4429", "Semester": "Spring", "Year": "2016", "Subject": "ME"}],
+{"Title": "INDUSTRIAL ROBOTICS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "4815", "Semester": "Spring", "Year": "2015", "Subject": "RBE"},
+{"Title": "INTRO TO ARTIFICIAL INTELLIGENCE", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "4341", "Semester": "Fall", "Year": "2016", "Subject": "CS"},
+{"Title": "ROBOTIC MINING PLATFORM A", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Fall", "Year": "2016", "Subject": "MQP"},
+{"Title": "MODELING & ANALYSIS OF MECHATRONIC SYSTEMS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "4322", "Semester": "Fall", "Year": "2016", "Subject": "RBE"},
+{"Title": "INTRO TO BIOLOGY", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1001", "Semester": "Fall", "Year": "2016", "Subject": "BB"},
+{"Title": "CYBERLAW AND POLICY", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2314", "Semester": "Fall", "Year": "2016", "Subject": "GOV"},
+{"Title": "ROBOTIC MINING PLATFORM B", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Fall", "Year": "2016", "Subject": "MQP"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "", ""], "Course": "1009", "Semester": "Fall", "Year": "2016", "Subject": "PE"},
+{"Title": "BADMINTON AND TABLE TENNIS", "null": ["\u00a0", "", ""], "Course": "1015", "Semester": "Fall", "Year": "2016", "Subject": "PE"},
+{"Title": "3D MODELING I", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2101", "Semester": "Spring", "Year": "2017", "Subject": "AR"},
+{"Title": "SYSTEMS PROGRAMMING CONCEPTS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2303", "Semester": "Spring", "Year": "2017", "Subject": "CS"},
+{"Title": "ROBOTIC MINING PLATFORM C", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Spring", "Year": "2017", "Subject": "MQP"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1009", "Semester": "Spring", "Year": "2017", "Subject": "PE"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1009", "Semester": "Spring", "Year": "2017", "Subject": "PE"},
+{"Title": "ALGORITHMS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2223", "Semester": "Spring", "Year": "2017", "Subject": "CS"},
+{"Title": "INQUIRY SEMINAR: ROBOTS IN HISTORY", "null": ["\u00a0", "", ""], "Course": "3900", "Semester": "Spring", "Year": "2017", "Subject": "HU"},
+{"Title": "ROBOTIC MINING PLATFORM D", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Spring", "Year": "2017", "Subject": "MQP"}];
 
 function myFunction(cat, id) {
 	var out = "";

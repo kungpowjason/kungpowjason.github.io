@@ -278,7 +278,23 @@ var arr = [ {
 	"Semester" : "Spring",
 	"Year" : "2016",
 	"Subject" : "ME"
-} ];
+},
+{"Title": "INTRO TO ARTIFICIAL INTELLIGENCE", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "4341", "Semester": "Fall", "Year": "2016", "Subject": "CS"},
+{"Title": "ROBOTIC MINING PLATFORM A", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Fall", "Year": "2016", "Subject": "MQP"},
+{"Title": "MODELING & ANALYSIS OF MECHATRONIC SYSTEMS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "4322", "Semester": "Fall", "Year": "2016", "Subject": "RBE"},
+{"Title": "INTRO TO BIOLOGY", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1001", "Semester": "Fall", "Year": "2016", "Subject": "BB"},
+{"Title": "CYBERLAW AND POLICY", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2314", "Semester": "Fall", "Year": "2016", "Subject": "GOV"},
+{"Title": "ROBOTIC MINING PLATFORM B", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Fall", "Year": "2016", "Subject": "MQP"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "", ""], "Course": "1009", "Semester": "Fall", "Year": "2016", "Subject": "PE"},
+{"Title": "BADMINTON AND TABLE TENNIS", "null": ["\u00a0", "", ""], "Course": "1015", "Semester": "Fall", "Year": "2016", "Subject": "PE"},
+{"Title": "3D MODELING I", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2101", "Semester": "Spring", "Year": "2017", "Subject": "AR"},
+{"Title": "SYSTEMS PROGRAMMING CONCEPTS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2303", "Semester": "Spring", "Year": "2017", "Subject": "CS"},
+{"Title": "ROBOTIC MINING PLATFORM C", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Spring", "Year": "2017", "Subject": "MQP"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1009", "Semester": "Spring", "Year": "2017", "Subject": "PE"},
+{"Title": "WALKING FOR FITNESS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "1009", "Semester": "Spring", "Year": "2017", "Subject": "PE"},
+{"Title": "ALGORITHMS", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "2223", "Semester": "Spring", "Year": "2017", "Subject": "CS"},
+{"Title": "INQUIRY SEMINAR: ROBOTS IN HISTORY", "null": ["\u00a0", "", ""], "Course": "3900", "Semester": "Spring", "Year": "2017", "Subject": "HU"},
+{"Title": "ROBOTIC MINING PLATFORM D", "null": ["\u00a0", "\u00a0", "\u00a0"], "Course": "KZS", "Semester": "Spring", "Year": "2017", "Subject": "MQP"}];
 
 function convertColor(expression){
 	var color;
@@ -289,40 +305,40 @@ function convertColor(expression){
 		case "MA":
 		color = "#79ddb7";
 		break;
-		    case "ME":
-        color = "#ff7c74";
-        break;
-            case "PH":
-        color = "#bc677a";
-        break;
-            case "ECE":
-        color = "#f4bd63";
-        break;
-            case "ES":
-        color = "#36454f";
-        break;
-            case "CH":
-        color = "#32b871";
-        break;
-            case "RBE":
-        color = "#c0272a";
-        break;
-            case "IQP":
-        color = "#fff400";
-        break;
-            case "HI":
-        color = "#3c1c59";
-        break;
+		case "ME":
+		color = "#ff7c74";
+		break;
+		case "PH":
+		color = "#bc677a";
+		break;
+		case "ECE":
+		color = "#f4bd63";
+		break;
+		case "ES":
+		color = "#36454f";
+		break;
+		case "CH":
+		color = "#32b871";
+		break;
+		case "RBE":
+		color = "#c0272a";
+		break;
+		case "IQP":
+		color = "#fff400";
+		break;
+		case "HI":
+		color = "#3c1c59";
+		break;
         //     case "GOV":
         // code block
         // break;
-            case "ETR":
+        case "ETR":
         color = "#fb9ba9";
         break;
-		default:
-		color = "Black"
-	}
-	return color;
+        default:
+        color = "Black"
+    }
+    return color;
 }
 
 function displayClasses(year, semester, id) {
@@ -332,11 +348,11 @@ function displayClasses(year, semester, id) {
 	for (i = 0; i < arr.length; i++) {
 		if ((year == arr[i].Year) && (semester == arr[i].Semester)) {
 			out += '<div class = "col-lg-3">' + '<span class="class-subject" style = "color:' + convertColor(arr[i].Subject) + '">'
-					+ arr[i].Subject + '</span>' + "."
-					+ '<span class="class-course">' + arr[i].Course + '</span>' + '</div>'
-					+ '<div class = "col-lg-9">'
-					+ '<span class="class-title">' + arr[i].Title + '</span>'
-					+ '</div>';
+			+ arr[i].Subject + '</span>' + "."
+			+ '<span class="class-course">' + arr[i].Course + '</span>' + '</div>'
+			+ '<div class = "col-lg-9">'
+			+ '<span class="class-title">' + arr[i].Title + '</span>'
+			+ '</div>';
 		}
 	}
 	document.getElementById(id).innerHTML = out;
