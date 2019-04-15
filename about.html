@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<META http-equiv="refresh" content="0;URL=projects.html">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Jason Wu</title>
+<title>Jason Wu | About</title>
 <link rel="icon" href="img/favicon_jw.png">
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<script src="js/wpi_class_data.js"></script>
 </head>
 <body>
 	<!-- Navigation -->
@@ -61,13 +61,13 @@
 	<!-- Page Header -->
 	<!-- Set your background image for this header on the line below. -->
 	<header class="intro-header"
-		style="background-image: url('img/projects_gears_bg.jpg')">
+		style="background-image: url('img/rbelab_bg.png')">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<div class="site-heading" style="padding:0">
-						<h1>Jason Wu</h1>
-						<span class="subheading">Project Section in Work</span>
+					<div class="page-heading">
+						<h1>Robotics and M.E.</h1>
+						<span class="subheading">Striving for excellence.</span>
 						<hr class="small">
 					</div>
 				</div>
@@ -78,55 +78,66 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">Man must explore, and this is
-							exploration at its greatest</h2>
-						<h3 class="post-subtitle">Problems look mighty small from 150
-							miles up</h3>
-					</a>
-					<p class="post-meta">
-						Posted by <a href="#">Jason Wu</a> on September 24, 2014
-					</p>
-				</div>
-				<hr>
-				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">I believe every human has a finite
-							number of heartbeats. I don't intend to waste any of mine.</h2>
-					</a>
-					<p class="post-meta">
-						Posted by <a href="#">Jason Wu</a> on September 18, 2014
-					</p>
-				</div>
-				<hr>
-				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">Science has not yet mastered prophecy
-						</h2>
-						<h3 class="post-subtitle">We predict too much for the next
-							year and yet far too little for the next ten.</h3>
-					</a>
-					<p class="post-meta">
-						Posted by <a href="#">Jason Wu</a> on August 24, 2014
-					</p>
-				</div>
-				<hr>
-				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">Failure is not an option</h2>
-						<h3 class="post-subtitle">Many say exploration is part of our
-							destiny, but it’s actually our duty to future generations.</h3>
-					</a>
-					<p class="post-meta">
-						Posted by <a href="#">Jason Wu</a> on July 8, 2014
-					</p>
-				</div>
-				<hr>
-				<!-- Pager -->
-				<ul class="pager">
-					<li class="next"><a href="#">Older Posts &rarr;</a></li>
-				</ul>
+				<p style = "text-align: justify">
+					I'm a junior at WPI double majoring in <strong>robotics</strong>
+					and <strong>mechanical engineering</strong>. I'm interested in
+					mechanical design, mechatronics, and software development. I like
+					to spend my time testing out ideas, working in the lab, and keeping
+					fit and healthy. I believe in balance and work to improve myself
+					and what I do in all areas.
+				</p>
+			</div>
+		</div>
+		<h1 style = "text-align: center">WPI | Class of 2017</h1>
+		<div class="class-year">
+			<h2>Freshman Year</h2>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="Fall2013"></div>
+				<script>
+					displayClasses("2013", "Fall", "Fall2013");
+				</script>
+			</div>
+			<div class="col-lg-6">
+				<div id="Spring2014"></div>
+				<script>
+					displayClasses("2014", "Spring", "Spring2014");
+				</script>
+			</div>
+		</div>
+		<div class="class-year">
+			<h2>Sophmore Year</h2>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="Fall2014"></div>
+				<script>
+					displayClasses("2014", "Fall", "Fall2014");
+				</script>
+			</div>
+			<div class="col-lg-6">
+				<div id="Spring2015"></div>
+				<script>
+					displayClasses("2015", "Spring", "Spring2015");
+				</script>
+			</div>
+		</div>
+		<div class="class-year">
+			<h2>Junior Year</h2>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="Fall2015"></div>
+				<script>
+					displayClasses("2015", "Fall", "Fall2015");
+				</script>
+			</div>
+			<div class="col-lg-6">
+				<div id="Spring2016"></div>
+				<script>
+					displayClasses("2016", "Spring", "Spring2016");
+				</script>
 			</div>
 		</div>
 	</div>
@@ -137,24 +148,18 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 					<ul class="list-inline text-center">
-						<li><a href="#"> <span class="fa-stack fa-lg"> <i
-									class="fa fa-circle fa-stack-2x"></i> <i
-									class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-							</span>
-						</a></li>
-						<li><a href="#"> <span class="fa-stack fa-lg"> <i
+						<li><a href="https://www.facebook.com/jason.wu.718"> <span class="fa-stack fa-lg"> <i
 									class="fa fa-circle fa-stack-2x"></i> <i
 									class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 							</span>
 						</a></li>
-						<li><a href="#"> <span class="fa-stack fa-lg"> <i
+						<li><a href="https://github.com/kungpowjason"> <span class="fa-stack fa-lg"> <i
 									class="fa fa-circle fa-stack-2x"></i> <i
 									class="fa fa-github fa-stack-1x fa-inverse"></i>
 							</span>
 						</a></li>
 					</ul>
-					<p class="copyright text-muted">Copyright &copy; Your Website
-						2014</p>
+					<p class="copyright text-muted">Copyright &copy; 2014</p>
 				</div>
 			</div>
 		</div>
